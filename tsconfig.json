@@ -18,6 +18,6 @@
   "tsc-alias": {
     "resolveFullPaths": true
   },
-  "include": ["src/**/*.ts", "tests/**/*.ts"],
+  "include": ["src/**/*.ts", "tests/**/*.ts", "global.d.ts"],
   "exclude": ["node_modules", "dist"]
 }
