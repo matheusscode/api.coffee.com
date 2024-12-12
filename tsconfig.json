@@ -4,15 +4,19 @@
     "moduleResolution": "nodenext",
     "module": "NodeNext",
     "strict": true,
-    "baseUrl": "./",
     "declaration": true,
     "sourceMap": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
+    "outDir": "dist",
+    "baseUrl": "./",
     "paths": {
       "@/*": ["./*"]
     }
+  },
+  "tsc-alias": {
+    "resolveFullPaths": true
   },
   "include": ["src/**/*.ts", "tests/**/*.ts"],
   "exclude": ["node_modules", "dist"]
