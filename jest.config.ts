@@ -15,9 +15,13 @@ const config: Config = {
   testEnvironment: "node",
   clearMocks: true,
   preset: "ts-jest",
+  transform: {
+    "^.+\\.ts$": "ts-jest",
+  },
   moduleNameMapper: {
     "@/(.*)": "<rootDir>/$1",
   },
+  transformIgnorePatterns: ["/node_modules/(?!your-esm-package)/"],
 };
 
 export default config;

@@ -1,3 +1,4 @@
-pnpm lint:fix
-pnpm lint:ci
-pnpm test
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+pnpm run lint
